@@ -9,10 +9,8 @@
 --
 -- Improve cursor visibility
 -- Set default cursor to block and disable blinking
-vim.o.guicursor = "n-v-c:block-Cursor/lCursor,a:blinkon0"
-
--- Set cursor to green and block in insert mode
-vim.o.guicursor = vim.o.guicursor .. ",i:block-Cursor/green"
+-- In Kitty I disable this to use the cursor settings in kitty.conf instead
+-- vim.o.guicursor = "n-v-c:block-Cursor/lCursor,a:blinkon0"
 
 -- Undo settings
 -- vim.opt.undofile = true
