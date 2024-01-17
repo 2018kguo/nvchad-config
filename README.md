@@ -1,3 +1,2 @@
 # Example_config
-
-This can be used as an example custom config for NvChad. Do check the https://github.com/NvChad/nvcommunity
+Personal setup I use for neovim with NVChad, includes github copilot, LSP servers for python/go/rust, and visual changes to the cursor/highlighting for visual clarity.
