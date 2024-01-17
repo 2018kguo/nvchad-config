@@ -1,1 +1,2 @@
 # nvchad-config
+# nvchad-config
