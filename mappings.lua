@@ -1,6 +1,11 @@
 ---@type MappingsTable
 local M = {}
 
+function CopyRelativePathToClipboard()
+  local relative_path = vim.fn.expand('%')
+  vim.fn.system('echo ' .. relative_path .. ' | pbcopy')
+end
+
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
@@ -11,8 +16,12 @@ M.general = {
         require("conform").format()
       end,
       "formatting",
-    }
+    },
 
+    -- for showing errors from LSP
+    ["<D-.>"] = {":lua vim.diagnostic.open_float()<CR>", "show errors"},
+    -- for copying relative path to clipboard
+    ["<D-p>"] = {":lua CopyRelativePathToClipboard()<CR>", "copy relative path"},
   },
   v = {
     [">"] = { ">gv", "indent"},

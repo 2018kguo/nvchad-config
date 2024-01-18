@@ -32,7 +32,7 @@ vim.cmd [[
 local originalCursorLineColor = "#303838"
 
 -- Highlight color for cursor line in insert mode
-local insertModeCursorLineColor = "#55695D" -- replace with your preferred color
+local insertModeCursorLineColor = "#38453f" -- replace with your preferred color
 
 -- Function to set cursor line color
 local function setCursorLineColor(color)
