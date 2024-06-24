@@ -20,3 +20,6 @@ map('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float()<CR>', { desc = "Open
 map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', { desc = "Go to previous diagnostic", noremap = true, silent = true })
 map('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', { desc = "Go to next diagnostic", noremap = true, silent = true })
 map('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', { desc = "Set diagnostics to location list", noremap = true, silent = true })
+
+-- :lua require("telescope").extensions.live_grep_args.live_grep_args()
+map("n", "<leader>fw", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", { desc = "Live grep with args" })
