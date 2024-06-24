@@ -1,10 +1,14 @@
--- EXAMPLE 
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls" }
+
+local servers = {
+  "html", "cssls", "tsserver", "clangd", "rust_analyzer", "gopls",
+  "pyright", "yamlls", "dockerls", "clojure_lsp", "cmake",
+  "terraformls", "vimls"
+}
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
