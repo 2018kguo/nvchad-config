@@ -23,3 +23,5 @@ map('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', { desc = "Set 
 
 -- :lua require("telescope").extensions.live_grep_args.live_grep_args()
 map("n", "<leader>fw", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", { desc = "Live grep with args" })
+
+map({ "n", "v" }, "K", "<cmd>lua vim.lsp.buf.hover()<CR>", { desc = "LSP Hover" })
